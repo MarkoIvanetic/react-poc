@@ -6,6 +6,9 @@ import {HashRouter} from 'react-router-dom';
 
 import Layout from "./Layout";
 import './main.scss';
+import './css/bootstrap-reboot.css';
+import './css/bootstrap.css';
+import './css/bootstrap-theme.css';
 
 
 // ReactDOM.render(<Index />, document.getElementById("index"));

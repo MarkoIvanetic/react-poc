@@ -15,7 +15,9 @@ export default class Remoting extends React.Component {
 	render () {
 		return (
 			  <div>
-			  	<button onClick={this.callRemoteAction.bind(this)}>Remote</button>
+			  	<button onClick={this.callRemoteAction.bind(this)}>Remote
+			  		<span className="glyphicon glyphicon-euro"></span>
+			  	</button>
 			  </div>
 			);
 	}
