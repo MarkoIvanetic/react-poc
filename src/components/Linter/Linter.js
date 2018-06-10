@@ -1,19 +1,11 @@
 import React from 'react'
 
-import './names.scss';
-import name_list from './name_list';
-
-export default class Names extends React.Component {
+export default class Linter extends React.Component {
 		constructor() {
 		    super();
-		    this.state = {filter: ''}
 		}
 
-	handleChange(e){
-		this.setState({
-			filter: e.target.value
-		});
-	}
+	
 	// componentWillMount() {
 	// 	console.log("Component will mount");
 	// }
@@ -39,17 +31,13 @@ export default class Names extends React.Component {
 	// componentWillUnmount() {
 	// 	console.log("Component will unmount");
 	// }
-	render () {
 
-		let filtered_list = name_list
-			.filter((item) => item.includes(this.state.filter))
-			.map((item) => {return <li key={item}>{ item }</li>})
+	render () {
 
 		return (
 			  <div>
-			  	<input onChange={this.handleChange.bind(this)} value={this.state.filter}/>
 		    	<ul>
-				  {filtered_list}
+				  
 				</ul>
 			  </div>
 

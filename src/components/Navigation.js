@@ -8,11 +8,11 @@ export default class Navigation extends React.Component {
 	render () {
 		return (
 				<nav>
-					<ul>
-						<li><Link to="/">Home</Link></li>
-						<li><Link to="/names">Names</Link></li>
-						<li><Link to="/color">Color</Link></li>
-						<li><Link to="/remoting">Remoting</Link></li>
+					<ul className="nav nav-tabs">
+						<li className="uib-tab nav-item"><Link to="/console">Console</Link></li>
+						<li className="uib-tab nav-item"><Link to="/linter">Linter</Link></li>
+						<li className="uib-tab nav-item"><Link to="/recreate">Re-create Object Graph Handlers</Link></li>
+						<li className="uib-tab nav-item"><Link to="/remoting">Remoting</Link></li>
 					</ul>
 				</nav>	
 			);

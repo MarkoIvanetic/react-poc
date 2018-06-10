@@ -14,7 +14,7 @@ import Main from './components/Main'
 export default class Layout extends React.Component {
 	constructor() {
 		super();
-		this.state = {title: "Welcome"};
+		this.state = {title: "Elastic Console"};
 	}
 
 	changeTitle(title) {
@@ -24,10 +24,9 @@ export default class Layout extends React.Component {
 	render () {
 
 		return (
-				<div>
-					<Header changeTitle={this.changeTitle.bind(this)} title = {this.state.title}/>
-					<Navigation />
-					<Main />
+				<div className="col-md-10 col-md-offset-1">
+					<Header/>
+					<Navigation /><Main />
 					<Footer />
 				</div>
 			);
